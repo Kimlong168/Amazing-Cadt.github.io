@@ -1,0 +1,215 @@
+* {
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+/* main line-container */
+#main-container {
+  background: linear-gradient(180deg, rgba(63,94,251,1) 0%, rgba(156,82,180,1) 38%, rgba(184,78,159,1) 64%, rgba(252,70,107,1) 100%);
+  width: 60%;
+  height: 589px;
+  margin: 5px auto;
+  padding-left: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+/* left side bar */
+#left-bar{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#left-bar .backToHome-icon a{
+  color: white;
+  text-decoration: none;
+}
+/* right side bar */
+#right-bar {
+  float: right;
+  width: 70%;
+  height: 578px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  padding:20px 20px  0 20px;
+  box-sizing: border-box;
+}
+#shop-name {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+}
+#title{
+  color: rgb(20, 18, 18);
+  margin:0;
+}
+/* form 1  and 2 */
+#form1, #form2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+#form2{
+  margin-top: 10px;
+  position: relative;
+}
+.btn-opt {
+  width: 90%;
+  height: 32px;
+  color:rgb(20, 18, 18);
+  margin: 0 auto;
+  margin-bottom: 5px ;
+  background-color: white;
+  border: 1px solid gray;
+  text-align: justify;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn-opt:hover{
+ background-color: rgba(225, 221, 221, 0.507); 
+}
+.space {
+  color: transparent;
+}
+
+/* line "or" container */
+#line-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  color: gray;
+}
+.line{
+  width: 45%;
+  height:0.5px;
+  background-color: gray;
+  margin: 5px;
+}
+
+/* input boxes */
+.input-box {
+  width: 97%;
+  height: 32px;
+  margin: 0;
+  margin-bottom: 2px ;
+  cursor:text;
+}
+.input-box:hover{
+  background-color: initial;
+}
+label {
+  margin-bottom: 7px;
+}
+#form2 > a {
+  font-size: 12px;
+  text-align: left;
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+}
+.login-btn {
+  background-color: #fbc91b;
+  width: 99%;
+  height: 36px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+}
+.login-btn:hover{
+  background-color: #fbc91b;
+}
+
+
+/*-------------------------------Responsive webpage------------------------------*/
+
+@media screen and (max-width:930px) {
+  #main-container {
+    width: 65%;
+  }
+  #right-bar {
+    width: 80%;
+  }
+  #shop-name {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:820px) {
+  #main-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width:815px) {
+  #right-bar {
+    width: 83%;
+  }
+  #shop-name {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:775px) {
+  #main-container {
+    width: 90%;
+  }
+  #right-bar {
+    width: 85%;
+  }
+  #shop-name {
+    font-size: 12px;
+  }
+  .btn-opt {
+    height: 30px;
+  }
+}
+@media screen and (max-width:505px) {
+  #main-container {
+    width: 95%;
+  }
+}
+@media screen and (max-width:485px) {
+  #shop-name {
+    display: none;
+  }
+  #right-bar {
+    width: 97%;
+  }
+}
+@media screen and (max-width:425px) {
+#main-container{
+  width: 100%;
+}
+  #right-bar {
+    width: 97%;
+  }
+}
+@media screen and (max-width:400px) {
+  #main-container{
+    width: 100%;
+  }
+  #left-bar{
+    left: 5px;
+  }
+  #right-bar {
+    width: 99%;
+  }
+  #right-bar > p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  }
+  @media screen and (max-width:372px) {
+    #newline {
+      padding-right: 40px;
+    }
+  }
+  @media screen and (max-width:348px) {
+    #newline {
+      padding-right: 10px;
+    }
+  }
+
+  

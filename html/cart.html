@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to cart</title>
+    <link rel="icon" href="../images/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/96bf2d4fc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/cart.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <!-- navigation bar -->
+    <nav id="navAbout">
+      <!-- content -->
+      <div class="nav__content">
+        <!-- all elements -->
+        <a href="index.html">
+          <div class="nav__content-element">Home</div>
+        </a>
+        <a href="shop.html">
+          <div class="nav__content-element">Shop</div>
+        </a>
+        <a href="service.html">
+          <div class="nav__content-element">Service</div>
+        </a>
+        <a href="pricing.html">
+          <div class="nav__content-element">Pricing</div>
+        </a>
+        <a href="about.html">
+          <div class="nav__content-element">About</div>
+        </a>
+        <a href="contact.html">
+          <div class="nav__content-element">Contact</div>
+        </a>
+      </div>
+      <!-- logo image -->
+      <img class="logo" src="../images/logo.png" alt="logo" />
+      <!-- navbar icon -->
+      <div class="nav__icon">
+        <a href="#"
+          ><div class="nav__icon-element">
+            <i class="fa-solid fa-cart-shopping"></i></div
+        ></a>
+        <a href="#"
+          ><div class="nav__icon-element">
+            <i class="fa-regular fa-circle-user"></i></div
+        ></a>
+        <!-- login button -->
+        <a href="login.html" target="display"
+          ><button class="nav__icon-button">Login</button></a
+        >
+      </div>
+      <!-- menu bar icon -->
+      <div class="menu-icon" id="menuIcon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- back icon -->
+      <div class="back-icon" id="backIcon">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+    </nav>
+    <!-- hidden navigation bar -->
+    <div class="hidden-nav" id="hiddenNav">
+      <a href="index.html">
+        <div class="hiddenNav__content-element">Home</div>
+      </a>
+      <a href="shop.html">
+        <div class="hiddenNav__content-element">Shop</div>
+      </a>
+      <a href="service.html">
+        <div class="hiddenNav__content-element">Service</div>
+      </a>
+      <a href="pricing.html">
+        <div class="hiddenNav__content-element">Pricing</div>
+      </a>
+      <a href="about.html">
+        <div class="hiddenNav__content-element">About</div>
+      </a>
+      <a href="contact.html">
+        <div class="hiddenNav__content-element">Contact</div>
+      </a>
+    </div>
+
+    <!-- This is add to cart -->
+    <div class="cart__wrapper">
+      <!-- left side - cart table -->
+      <div class="cart__table">
+        <!-- cart table -->
+        <table>
+          <!-- table head -->
+          <thead>
+            <!-- table header -->
+            <tr class="cart__table-thead">
+              <td>Product</td>
+              <td>Quantity</td>
+              <td>Price</td>
+            </tr>
+          </thead>
+          <!-- table body -->
+          <tbody>
+            <!-- row of the product -->
+            <tr>
+              <td>
+                <div class="cart__table-item">
+                  <!-- item image -->
+                  <div class="item-image">
+                    <img src="../images/clothes/T-shirt.jpg" alt="item image" />
+                  </div>
+                  <!-- item name -->
+                  <div class="item-name">T-shirt</div>
+                </div>
+              </td>
+              <!-- add to card btn and quantity btn -->
+              <td class="cart__table-qty">
+                <div class="product-btn">
+                  <!-- quantity button -->
+                  <div class="quantity-btn">
+                    <button class="minus">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <!-- quantity value -->
+                    <span class="number" type="text" value="1">1</span>
+                    <button class="plus">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+              <!-- price -->
+              <td>
+                <div class="cart__table-price">
+                  <!-- price value -->
+                  <input type="submit" class="price" value="10.00 $" />
+                  <div class="remove-icon">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row of the product -->
+            <tr>
+              <td>
+                <div class="cart__table-item">
+                  <!-- item image -->
+                  <div class="item-image">
+                    <img src="../images/clothes/Jean.jpg" alt="item image" />
+                  </div>
+                  <!-- item name -->
+                  <div class="item-name">Jean</div>
+                </div>
+              </td>
+              <!-- add to card btn and quantity btn -->
+              <td class="cart__table-qty">
+                <div class="product-btn">
+                  <!-- quantity button -->
+                  <div class="quantity-btn">
+                    <button class="minus">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <!-- quantity value -->
+                    <span class="number" type="text" value="1">1</span>
+                    <button class="plus">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+              <!-- price -->
+              <td>
+                <div class="cart__table-price">
+                  <!-- price value -->
+                  <input type="submit" class="price" value="25.00 $" />
+                  <div class="remove-icon">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <!-- row of the product -->
+            <tr>
+              <td>
+                <div class="cart__table-item">
+                  <!-- item image -->
+                  <div class="item-image">
+                    <img src="../images/clothes/Jacket.jpg" alt="item image" />
+                  </div>
+                  <!-- item name -->
+                  <div class="item-name">Jacket</div>
+                </div>
+              </td>
+              <!-- add to card btn and quantity btn -->
+              <td class="cart__table-qty">
+                <div class="product-btn">
+                  <!-- quantity button -->
+                  <div class="quantity-btn">
+                    <button class="minus">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <!-- quantity value -->
+                    <span class="number" type="text" value="1">1</span>
+                    <button class="plus">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </td>
+              <!-- price -->
+              <td>
+                <div class="cart__table-price">
+                  <!-- price value -->
+                  <input type="submit" class="price" value="30.00 $" />
+                  <div class="remove-icon">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- bottom button -->
+        <div class="bottom__btn-container">
+          <!--continue shopping button -->
+          <div class="shopping-btn">
+            <a href="shop.html"
+              ><button>
+                <i class="fa-solid fa-chevron-left"></i>
+                <span>Continue</span> Shopping
+              </button>
+            </a>
+          </div>
+          <!-- process checkout button -->
+          <div class="checkout-btn">
+            <a href="#">
+              <button>
+                <span>Process</span> Checkout
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- right side - total checkout -->
+      <div class="total_checkout">
+        <!-- title -->
+        <div class="totol_checkout-title">Order Total</div>
+        <!-- checkout table container-->
+        <div class="checkout__table">
+          <!-- table  -->
+          <table>
+            <!-- table body -->
+            <tbody>
+              <!-- Subtotal -->
+              <tr>
+                <td>Subtotal:</td>
+                <td>
+                  <span class="checkout-input subtotal">0.00 $</span>
+                </td>
+              </tr>
+              <!-- Taxes -->
+              <tr>
+                <td>Taxes(5%):</td>
+                <td>
+                  <span class="checkout-input taxes">0.00 $</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="checkout__table-line"></div>
+                </td>
+              </tr>
+            </tbody>
+            <!-- table footer -->
+            <tfoot>
+              <!-- total -->
+              <tr>
+                <td>Total:</td>
+                <td>
+                  <span class="checkout-input checkout-input-total total"
+                    >0.00 $</span
+                  >
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <!-- first box - useful link -->
+      <div class="footer__box" id="footer__firstBox">
+        <!-- title -->
+        <div class="footer__box-title">Useful Link</div>
+        <!-- useful link container -->
+        <div class="footer__usefulLink-container">
+          <div class="footer__usefulLink-box">
+            <a href="#">Home</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">About Us</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Product</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Service</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Login</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Privatcy Policy</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- second box - about us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">About Us</div>
+        <div class="footer__box-description">
+          <p>
+            We are a team of passionate people whose goal is to improve
+            everyone's life through disruptive products. We build great products
+            to solve your business problems.
+          </p>
+          <br />
+          <p>
+            Our products are designed for small to medium size companies willing
+            to optimize their performance.
+          </p>
+        </div>
+      </div>
+
+      <!-- third box - connect with us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">Connect with us</div>
+        <!-- contact infomation -->
+        <div class="footer__box-info">
+          <div class="footer__box-infoContent">
+            <a href="#">Contact us</a>
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="#">info@amazingshop.com.kh</a>
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="#">+1 (650) 555-0111</a>
+          </div>
+        </div>
+        <!-- socail medai link -->
+        <div class="footer__box-socialMedia">
+          <!-- facebook -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+
+          <!-- twiiter -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </a>
+
+          <!-- instagram -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </a>
+
+          <!-- goto home page -->
+          <a href="#navAbout">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      copyright <i class="fa-regular fa-copyright"></i> 2022 - All rights
+      reserved.
+    </div>
+
+    <!-- Javascript code -->
+    <script src="../js/script.js"></script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>

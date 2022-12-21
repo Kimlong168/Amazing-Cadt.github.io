@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="icon" href="../images/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/96bf2d4fc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/shop.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <!-- navigation bar -->
+    <nav id="navAbout">
+      <!-- content -->
+      <div class="nav__content">
+        <!-- all elements -->
+        <a href="index.html">
+          <div class="nav__content-element">Home</div>
+        </a>
+        <a href="shop.html">
+          <div class="nav__content-element">Shop</div>
+        </a>
+        <a href="service.html">
+          <div class="nav__content-element">Service</div>
+        </a>
+        <a href="pricing.html">
+          <div class="nav__content-element">Pricing</div>
+        </a>
+        <a href="about.html">
+          <div class="nav__content-element">About</div>
+        </a>
+        <a href="contact.html">
+          <div class="nav__content-element">Contact</div>
+        </a>
+      </div>
+      <!-- logo image -->
+      <img class="logo" src="../images/logo.png" alt="logo" />
+      <!-- navbar icon -->
+      <div class="nav__icon">
+        <!-- add to cart -->
+        <a href="cart.html"
+          ><div class="nav__icon-element">
+            <i class="fa-solid fa-cart-shopping"></i></div
+        ></a>
+        <!-- user profile -->
+        <a href="#"
+          ><div class="nav__icon-element">
+            <i class="fa-regular fa-circle-user"></i></div
+        ></a>
+        <!-- login button -->
+        <a href="login.html" target="display"
+          ><button class="nav__icon-button">Login</button></a
+        >
+      </div>
+      <!-- menu bar icon -->
+      <div class="menu-icon" id="menuIcon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- back icon -->
+      <div class="back-icon" id="backIcon">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+    </nav>
+    <!-- hidden navigation bar -->
+    <div class="hidden-nav" id="hiddenNav">
+      <a href="index.html">
+        <div class="hiddenNav__content-element">Home</div>
+      </a>
+      <a href="shop.html">
+        <div class="hiddenNav__content-element">Shop</div>
+      </a>
+      <a href="service.html">
+        <div class="hiddenNav__content-element">Service</div>
+      </a>
+      <a href="pricing.html">
+        <div class="hiddenNav__content-element">Pricing</div>
+      </a>
+      <a href="about.html">
+        <div class="hiddenNav__content-element">About</div>
+      </a>
+      <a href="contact.html">
+        <div class="hiddenNav__content-element">Contact</div>
+      </a>
+    </div>
+
+    <!-- This is shop page - shop wrapper -->
+    <div class="shop-wrapper">
+      <!-- left side - price range main container -->
+      <aside class="Shop__price-range-container">
+        <!-- price range title -->
+        <div class="price-range-title">Price Range</div>
+        <!-- price range input type range -->
+        <div class="price-range-input">
+          <!-- display value of price range -->
+          <div class="price-range-number-container">
+            <span class="price-range-number">0.00 $</span>
+            <span class="price-range-number price-range-number-put"
+              >90.00 $</span
+            >
+          </div>
+          <!-- input type range -->
+          <input
+            class="input_type-range"
+            type="range"
+            min="0"
+            max="100"
+            step="5"
+          />
+        </div>
+
+        <!-- shop advertisement -->
+        <div class="shop__advertisement">
+          <!-- image slide container -->
+          <div class="ads__slider">
+            <!-- image slide -->
+            <div class="image-slide first">
+              <img src="../images/shop-ads (3).png" alt="ads-image" />
+            </div>
+            <div class="image-slide">
+              <img src="../images/shop-ads (2).png" alt="ads-image" />
+            </div>
+            <div class="image-slide">
+              <img src="../images/shop-ads (1).png" alt="ads-image" />
+            </div>
+            <div class="image-slide">
+              <img src="../images/shop-ads (4).png" alt="ads-image" />
+            </div>
+            <div class="image-slide">
+              <img src="../images/shop-ads (5).png" alt="ads-image" />
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- right side - product container -->
+      <main class="shop__product-container">
+        <!-- product header -->
+        <div class="product-header">
+          <!-- search box container-->
+          <div class="search-box-container">
+            <div class="search-box">
+              <input type="search" placeholder="Search..." />
+            </div>
+            <button class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <!-- pricelist container -->
+          <div class="pricelist-container">
+            <!-- pricelist button -->
+            <button class="pricelist-btn">
+              <div class="pricelist-btn-text">Public Pricelist</div>
+              <div class="pricelist-btn-icon">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </button>
+            <!-- pricelist dropdown content -->
+            <div class="pricelist-dropdown">
+              <div class="pricelist-dropdown-content">New customer</div>
+              <div class="pricelist-dropdown-content">Old customer</div>
+              <div class="pricelist-dropdown-content">Good customer</div>
+              <div class="pricelist-dropdown-content">VIP customer</div>
+            </div>
+          </div>
+          <!-- sort by container container -->
+          <div class="sort-container">
+            <div class="sort-title">Sort By:</div>
+            <div class="sort-btn-container">
+              <!-- sort button -->
+              <button class="sort-btn">
+                <div class="sort-btn-text">Feature</div>
+                <div class="sort-btn-icon">
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+              </button>
+              <!-- sort dropdown content-->
+              <div class="sort-btn-dropdown">
+                <div class="sort-btn-dropdown-content">Newest Arrivals</div>
+                <div class="sort-btn-dropdown-content">Name(A-Z)</div>
+                <div class="sort-btn-dropdown-content">Featured</div>
+                <div class="sort-btn-dropdown-content">Price Low to High</div>
+                <div class="sort-btn-dropdown-content">Price High to Low</div>
+              </div>
+            </div>
+          </div>
+          <!-- grid view and list view-->
+          <div class="view-btn-container">
+            <!-- grid view button -->
+            <button class="grid-view-btn active">
+              <span class="material-symbols-outlined"> grid_view </span>
+            </button>
+            <!-- list view button-->
+            <button class="list-view-btn">
+              <span class="material-symbols-outlined">
+                format_list_bulleted
+              </span>
+            </button>
+          </div>
+
+          <!-- hidden icon - hidden price range -->
+          <div class="hidden-price-range-container">
+            <button class="hidden-price-range-btn">
+              <i class="fa-solid fa-sliders"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- product wrapper -->
+        <div class="product-wrapper">
+          <!-- gird container -->
+          <div class="product-grid-container">
+            <!-- ------row1--------- -->
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img
+                    src="../images/clothes/T-shirt.jpg"
+                    alt="product-image"
+                  />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">T-shirt</div>
+                <div class="product-price">$ 12.00</div>
+              </div>
+            </div>
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img src="../images/clothes/Jean.jpg" alt="product-image" />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">Jean</div>
+                <div class="product-price">$ 25.00</div>
+              </div>
+            </div>
+
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img src="../images/clothes/Jacket.jpg" alt="product-image" />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">Jacket</div>
+                <div class="product-price">$ 30.00</div>
+              </div>
+            </div>
+
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img src="../images/clothes/Vest.jpg" alt="product-image" />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">Vest</div>
+                <div class="product-price">$ 25.00</div>
+              </div>
+            </div>
+            <!-- ------row2--------- -->
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img
+                    src="../images/clothes/T-shirt.jpg"
+                    alt="product-image"
+                  />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">T-shirt</div>
+                <div class="product-price">$ 12.00</div>
+              </div>
+            </div>
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img src="../images/clothes/Jean.jpg" alt="product-image" />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">Jean</div>
+                <div class="product-price">$ 25.00</div>
+              </div>
+            </div>
+
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img src="../images/clothes/Jacket.jpg" alt="product-image" />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">Jacket</div>
+                <div class="product-price">$ 30.00</div>
+              </div>
+            </div>
+
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img src="../images/clothes/Vest.jpg" alt="product-image" />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">Vest</div>
+                <div class="product-price">$ 25.00</div>
+              </div>
+            </div>
+            <!-- ------row3--------- -->
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img
+                    src="../images/clothes/T-shirt.jpg"
+                    alt="product-image"
+                  />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">T-shirt</div>
+                <div class="product-price">$ 12.00</div>
+              </div>
+            </div>
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img src="../images/clothes/Jean.jpg" alt="product-image" />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">Jean</div>
+                <div class="product-price">$ 25.00</div>
+              </div>
+            </div>
+
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img src="../images/clothes/Jacket.jpg" alt="product-image" />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">Jacket</div>
+                <div class="product-price">$ 30.00</div>
+              </div>
+            </div>
+
+            <!-- grid box container -->
+            <div class="grid-box-container">
+              <!-- product image -->
+              <div class="product-image-container">
+                <a href="detail.html">
+                  <img src="../images/clothes/Vest.jpg" alt="product-image" />
+                </a>
+              </div>
+              <!-- product information -->
+              <div class="product-info-container">
+                <div class="product-name">Vest</div>
+                <div class="product-price">$ 25.00</div>
+              </div>
+            </div>
+          </div>
+
+          <!--product - pagination -->
+          <div class="shop__pagination-container">
+            <div class="pagination-icon left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="pagination-number pagination-active">
+              <span>1</span>
+            </div>
+            <div class="pagination-number">
+              <span>2</span>
+            </div>
+            <div class="pagination-number">
+              <span>3</span>
+            </div>
+            <div class="pagination-number">
+              <span>4</span>
+            </div>
+            <div class="pagination-number">
+              <span>5</span>
+            </div>
+            <div class="pagination-icon right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- hidden filter bar -->
+    <div class="filter-container">
+      <div class="filter-sort-container">
+        <span class="filter-sort-item">
+          Sort
+          <i class="fa-solid fa-plus filter-plus-icon"></i>
+        </span>
+        <!-- filter sort dropdown -->
+        <div class="filter-sort-dropdown">
+          <div class="filter-sort-dropdown-content">Newest Arrivals</div>
+          <div class="filter-sort-dropdown-content">Name(A-Z)</div>
+          <div class="filter-sort-dropdown-content">Featured</div>
+          <div class="filter-sort-dropdown-content">Price Low to High</div>
+          <div class="filter-sort-dropdown-content">Price High to Low</div>
+        </div>
+      </div>
+      <div class="filter-sort-container">
+        <span class="filter-sort-item">
+          Pricelist
+          <i class="fa-solid fa-plus filter-plus-icon"></i>
+        </span>
+        <!-- filter pricelist dropdown -->
+        <div class="filter-sort-dropdown">
+          <div class="filter-sort-dropdown-content">New Customer</div>
+          <div class="filter-sort-dropdown-content">Old Customer</div>
+          <div class="filter-sort-dropdown-content">Good Customer</div>
+          <div class="filter-sort-dropdown-content">Vip Customer</div>
+        </div>
+      </div>
+
+      <!-- left side - price range main container -->
+      <aside class="Shop__price-range-container">
+        <!-- price range title -->
+        <div class="price-range-title">Price Range</div>
+        <!-- price range input type range -->
+        <div class="price-range-input">
+          <!-- display value of price range -->
+          <div class="price-range-number-container">
+            <span class="price-range-number">0.00 $</span>
+            <span class="price-range-number price-range-number-put"
+              >90.00 $</span
+            >
+          </div>
+          <!-- input type range -->
+          <input
+            class="input_type-range"
+            type="range"
+            min="0"
+            max="100"
+            step="5"
+          />
+        </div>
+      </aside>
+
+      <!-- back icon -->
+      <div class="hide-filter-icon">
+        <i class="fa-regular fa-circle-right"></i>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <!-- first box - useful link -->
+      <div class="footer__box" id="footer__firstBox">
+        <!-- title -->
+        <div class="footer__box-title">Useful Link</div>
+        <!-- useful link container -->
+        <div class="footer__usefulLink-container">
+          <div class="footer__usefulLink-box">
+            <a href="#">Home</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">About Us</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Product</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Service</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Login</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Privatcy Policy</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- second box - about us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">About Us</div>
+        <div class="footer__box-description">
+          <p>
+            We are a team of passionate people whose goal is to improve
+            everyone's life through disruptive products. We build great products
+            to solve your business problems.
+          </p>
+          <br />
+          <p>
+            Our products are designed for small to medium size companies willing
+            to optimize their performance.
+          </p>
+        </div>
+      </div>
+
+      <!-- third box - connect with us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">Connect with us</div>
+        <!-- contact infomation -->
+        <div class="footer__box-info">
+          <div class="footer__box-infoContent">
+            <a href="#">Contact us</a>
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="#">info@amazingshop.com.kh</a>
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="#">+1 (650) 555-0111</a>
+          </div>
+        </div>
+        <!-- socail medai link -->
+        <div class="footer__box-socialMedia">
+          <!-- facebook -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+
+          <!-- twiiter -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </a>
+
+          <!-- instagram -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </a>
+
+          <!-- goto home page -->
+          <a href="#navAbout">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      copyright <i class="fa-regular fa-copyright"></i> 2022 - All rights
+      reserved.
+    </div>
+
+    <!-- Javascript code -->
+    <script src="../js/script.js"></script>
+    <script src="../js/shop.js"></script>
+  </body>
+</html>

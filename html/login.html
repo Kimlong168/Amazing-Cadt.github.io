@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member login</title>
+  <link rel="icon" href="../images/logo.png" />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=PT+Sans&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&family=Ubuntu:wght@300&display=swap"
+  rel="stylesheet"
+/>
+<script
+  src="https://kit.fontawesome.com/96bf2d4fc0.js"
+  crossorigin="anonymous"
+></script>
+  <link rel="stylesheet" href="../style/login.css">
+</head>
+<body>
+  <main>
+    <!--main container -->
+      <div id="main-container">
+        <!-- left side bar -->
+        <div id="left-bar">
+          <div class="backToHome-icon">
+             <!-- back home icon link -->
+            <a href="index.html"><i class="fa-solid fa-circle-chevron-left"></i></a>
+          </div>
+        </div>
+        <!-- right-side bar -->
+        <div id="right-bar">
+          <!-- title -->
+          <h2 id="title">Member <span style="color: #f4bf01">login</span></h2>
+          <p><span id="newline">Logging in as a communitty manager?</span> <a href="3">click here</a></p>
+          <!-- form 1-->
+          <form id="form1">
+            <button class="btn-opt"> <i class="fa-brands fa-google"></i> <span class="space">------------</span> Continue with Google</button>
+            <button class="btn-opt"> <i class="fa-brands fa-facebook" class="icon"> </i> <span class="space">------------</span> Continue with Facebook</button>
+            <button class="btn-opt"> <i class="fa-brands fa-discord"> </i> <span class="space">-----------</span> Continue with Discord</button>
+            <button class="btn-opt"> <i class="fa-solid fa-user"></i> <span class="space">------------</span> Continue with Username</button>
+            <!-- line "or" container -->
+            <div id="line-container">
+              <div class="line"></div>
+               <p>OR</p> 
+              <div class="line"></div>
+            </div>
+          </form>
+          
+          <!-- form 2 - input form-->
+          <form id="form2">
+            <label>Email</label>
+            <input type="email" class="input-box btn-opt" placeholder="Enter your email"></input><br>
+            <label>Password</label>
+            <input type="password" class="input-box btn-opt" placeholder="Enter password"></input><br>
+            <a href="#">forgot password?</a> <br>
+          </form>
+          <!-- login button -->
+          <button class="btn-opt login-btn">Login</button>
+        </div>
+        <!-- shop name -->
+        <h2 id="shop-name">Ama<span style="color: #f4bf01">zing</span></h2>
+      </div>
+  </main>
+</body>
+</html>

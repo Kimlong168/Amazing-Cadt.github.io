@@ -1,0 +1,111 @@
+
+:root {
+  --yellow: #FAB803;
+  --light-yellow:#f0c03d;
+  --white: #ffffff;
+  --dark: #1A1423;
+  --dark-blue: rgb(26,20,35);
+  --gray:rgb(198,196,200);
+  --light-gray:#F5F4F0;
+}
+
+.contact-wrapper{
+  background-color: var(--white);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding:40px 50px;
+}
+.contact__form-container .contact__form-text{
+  width: 60%;
+  line-height: 25px;
+  padding:0 0 25px;
+  color: var(--dark);
+}
+.contact__form-input table{
+  width: 100%;
+}
+.contact__form-input table tr td{
+ font-weight: bold;
+ padding-top: 10px;
+ padding-bottom:10px;
+}
+
+.contact__label{
+  padding: 0px 100px 0px 0;
+  width: 30%;
+}
+.contact__form-input input{
+  width: 530px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid rgb(192, 190, 190);
+  border-radius: 3px;
+  font-size: 16px;
+}
+.contact__form-input textarea{
+  padding: 10px;
+  width: 530px;
+  min-height: 100px;
+  border: 1px solid rgb(192, 190, 190);
+  border-radius: 3px;
+  font-size: 16px;
+  resize: vertical;
+}
+.contact__form-input input:focus,.contact__form-input textarea:focus{
+  outline:1px solid #FAB803;
+  box-shadow: 0 0 3px #FAB803 ;
+  border: none;
+}
+.contact__btn-submit{
+  padding:10px 30px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+}
+.contact__btn-submit:hover{
+  background-color: var(--light-yellow);
+}
+/* address */
+.contact__address-container .contact__box-info .contact__box-infoContent{
+  padding: 6px 0;
+}
+.contact__address-container .contact__box-info .contact__box-infoContent p{
+  font-weight: bold;
+}
+.contact__address-container .contact__box-info .contact__box-infoContent a{
+  text-decoration: none;
+  color: var(--dark);
+}
+
+/* responsive web page */
+@media screen and (max-width:1000px) {
+  .contact__form-input input,.contact__form-input textarea{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .contact__form-container .contact__form-text{
+    width:fit-content;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .contact-wrapper{
+    padding:30px;
+  }
+  .contact__label{
+    padding: 0px 50px 0px 0;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .contact__label{
+    padding: 0px 30px 0px 0;
+  }
+}

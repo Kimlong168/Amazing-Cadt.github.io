@@ -1,0 +1,119 @@
+:root {
+  --yellow: #FAB803;
+  --light-yellow:#f0c03d;
+  --white: #ffffff;
+  --dark: #1A1423;
+  --dark-blue: rgb(26,20,35);
+  --gray:rgb(198,196,200);
+  --light-gray:#F5F4F0;
+}
+
+.pricing-wrapper{
+  background-color:var(--white);
+  padding: 40px 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 35px;
+  text-align: center;
+}
+.pricing-wrapper .pricing__box-container{
+  width: 100%;
+}
+.pricing__box-container li:first-child{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: none;
+}
+.pricing__box-container li:last-child{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #EDECE8;
+  padding: 10px;
+  border-top: none;
+}
+.pricing__box-container li{
+  list-style-type: none;
+  border: 1px solid rgb(214, 213, 213);
+}
+
+.pricing-list-title {
+  font-size: 24px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.title-beginner, .title-expert{
+  background-color: #EDECE8;
+}
+.title-professional{
+  background-color: var(--light-yellow);
+}
+.professional-price{
+  background-color: rgb(255,248,230);
+}
+.price{
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  border-top: none;
+  border-bottom:none;
+}
+.perMonth{
+  padding-bottom: 20px;
+}
+.big-price{
+  font-size: 70px;
+}
+.benefit{
+  padding:12px 20px;
+}
+.pricing__box-container li.professional-bottom-list{
+  background-color: var(--light-yellow);
+  border-top: none;
+}
+.pricing__box-container li:last-child p{
+  margin-bottom: 20px;
+}
+.pricing__box-container li:last-child .pricing-btn button{
+  border: none;
+  background-color: var(--yellow);
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pricing__box-container li:last-child .pricing-btn button:hover{
+  background-color: var(--light-yellow);
+}
+.pricing__box-container li:last-child .start-now button{
+  background-color: var(--dark-blue);
+  color: white;
+}
+.pricing__box-container li:last-child .start-now button:hover{
+  background-color: rgb(12, 12, 59);
+}
+
+/* ---------------responsive webpage-------------------- */
+
+@media screen and (max-width:1024px){
+  .pricing-wrapper{
+   flex-direction: column;
+   align-items: center;
+  }
+  .pricing-wrapper .pricing__box-container{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:900px){
+  .pricing-wrapper{
+    padding: 20px 40px;
+  }
+  .pricing-wrapper .pricing__box-container{
+    width: 90%;
+  }
+}

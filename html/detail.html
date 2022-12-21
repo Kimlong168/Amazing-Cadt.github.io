@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Product</title>
+    <link rel="icon" href="../images/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/96bf2d4fc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/detail.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <!-- navigation bar -->
+    <nav id="navAbout">
+      <!-- content -->
+      <div class="nav__content">
+        <!-- all elements -->
+        <a href="index.html">
+          <div class="nav__content-element">Home</div>
+        </a>
+        <a href="shop.html">
+          <div class="nav__content-element">Shop</div>
+        </a>
+        <a href="service.html">
+          <div class="nav__content-element">Service</div>
+        </a>
+        <a href="pricing.html">
+          <div class="nav__content-element">Pricing</div>
+        </a>
+        <a href="about.html">
+          <div class="nav__content-element">About</div>
+        </a>
+        <a href="contact.html">
+          <div class="nav__content-element">Contact</div>
+        </a>
+      </div>
+      <!-- logo image -->
+      <img class="logo" src="../images/logo.png" alt="logo" />
+      <!-- navbar icon -->
+      <div class="nav__icon">
+        <a href="cart.html"
+          ><div class="nav__icon-element">
+            <i class="fa-solid fa-cart-shopping"></i></div
+        ></a>
+        <a href="#"
+          ><div class="nav__icon-element">
+            <i class="fa-regular fa-circle-user"></i></div
+        ></a>
+        <!-- login button -->
+        <a href="login.html" target="display"
+          ><button class="nav__icon-button">Login</button></a
+        >
+      </div>
+      <!-- menu bar icon -->
+      <div class="menu-icon" id="menuIcon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- back icon -->
+      <div class="back-icon" id="backIcon">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+    </nav>
+    <!-- hidden navigation bar -->
+    <div class="hidden-nav" id="hiddenNav">
+      <a href="index.html">
+        <div class="hiddenNav__content-element">Home</div>
+      </a>
+      <a href="shop.html">
+        <div class="hiddenNav__content-element">Shop</div>
+      </a>
+      <a href="service.html">
+        <div class="hiddenNav__content-element">Service</div>
+      </a>
+      <a href="pricing.html">
+        <div class="hiddenNav__content-element">Pricing</div>
+      </a>
+      <a href="about.html">
+        <div class="hiddenNav__content-element">About</div>
+      </a>
+      <a href="contact.html">
+        <div class="hiddenNav__content-element">Contact</div>
+      </a>
+    </div>
+
+    <!-- detial product container -->
+    <div class="detail-product-container">
+      <!-- product image -->
+      <div class="product-image">
+        <img src="../images/clothes/T-shirt.jpg" alt="product image" />
+      </div>
+
+      <!-- information of the product -->
+      <div class="product-information">
+        <!-- product name -->
+        <h1 class="product-name">T-shirt</h1>
+
+        <!-- product price -->
+        <h2 class="product-price">$ 12.00</h2>
+
+        <!-- add to card btn and quantity btn -->
+        <div class="product-btn">
+          <div class="quantity-btn">
+            <button class="minus"><i class="fa-solid fa-minus"></i></button>
+            <span class="number" type="text" value="1">1</span>
+            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <button class="addtoCard">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>ADD TO CARD</span>
+          </button>
+        </div>
+
+        <!-- term and condition -->
+        <div class="term-and-condition">
+          <span>Terms and Conditions</span>
+          <p>30-day money-back guarantee Shipping: 2-3 Business Days</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <!-- first box - useful link -->
+      <div class="footer__box" id="footer__firstBox">
+        <!-- title -->
+        <div class="footer__box-title">Useful Link</div>
+        <!-- useful link container -->
+        <div class="footer__usefulLink-container">
+          <div class="footer__usefulLink-box">
+            <a href="#">Home</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">About Us</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Product</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Service</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Login</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Privatcy Policy</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- second box - about us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">About Us</div>
+        <div class="footer__box-description">
+          <p>
+            We are a team of passionate people whose goal is to improve
+            everyone's life through disruptive products. We build great products
+            to solve your business problems.
+          </p>
+          <br />
+          <p>
+            Our products are designed for small to medium size companies willing
+            to optimize their performance.
+          </p>
+        </div>
+      </div>
+
+      <!-- third box - connect with us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">Connect with us</div>
+        <!-- contact infomation -->
+        <div class="footer__box-info">
+          <div class="footer__box-infoContent">
+            <a href="#">Contact us</a>
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="#">info@amazingshop.com.kh</a>
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="#">+1 (650) 555-0111</a>
+          </div>
+        </div>
+        <!-- socail medai link -->
+        <div class="footer__box-socialMedia">
+          <!-- facebook -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+
+          <!-- twiiter -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </a>
+
+          <!-- instagram -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </a>
+
+          <!-- goto home page -->
+          <a href="#navAbout">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      copyright <i class="fa-regular fa-copyright"></i> 2022 - All rights
+      reserved.
+    </div>
+
+    <!-- Javascript code -->
+    <script src="../js/script.js"></script>
+    <script src="../js/detail.js"></script>
+  </body>
+</html>
