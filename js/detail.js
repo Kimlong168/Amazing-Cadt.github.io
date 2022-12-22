@@ -16,3 +16,12 @@ function add(){
   quantity++;
   display.innerHTML=quantity;
 }
+
+ // -------------add to detail page-----------------
+let productName=document.getElementById("productName");
+let productPrice=document.getElementById("productPrice");
+let productImage=document.getElementById("productImage");
+
+ productName.innerHTML=localStorage.getItem("itemName");
+ productPrice.innerHTML=localStorage.getItem("itemPrice")+" $";
+ productImage.setAttribute("src",localStorage.getItem("itemImage"));
