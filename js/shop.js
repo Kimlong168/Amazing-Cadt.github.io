@@ -174,3 +174,63 @@ function removeFilterBar(){
   hiddenFilterContainer.style.position="";
   filterContainer.style.display="";
 }
+
+// ------------------------detail product----------------------------
+
+for(let i=0;i<productBox.length;i++){
+  productBox[i].addEventListener('click',()=>{
+    if(productBox[i].id=="T-shirt"){
+      localStorage.setItem("itemName","T-shirt");
+      localStorage.setItem("itemPrice","12.00");
+      localStorage.setItem("itemImage","../images/clothes/T-shirt.jpg");
+    }else if(productBox[i].id=="Jean"){
+      localStorage.setItem("itemName","Jean");
+      localStorage.setItem("itemPrice","25.00");
+      localStorage.setItem("itemImage","../images/clothes/jean.jpg");
+    }else if(productBox[i].id=="Jacket"){
+      localStorage.setItem("itemName","Jacket");
+      localStorage.setItem("itemPrice","30.00");
+      localStorage.setItem("itemImage","../images/clothes/jacket.jpg");
+    }else if(productBox[i].id=="Vest"){
+      localStorage.setItem("itemName","Vest");
+      localStorage.setItem("itemPrice","25.00");
+      localStorage.setItem("itemImage","../images/clothes/vest.jpg");
+    }else if(productBox[i].id=="Dress"){
+      localStorage.setItem("itemName","Dress");
+      localStorage.setItem("itemPrice","10.00");
+      localStorage.setItem("itemImage","../images/clothes/dress.webp");
+    }else if(productBox[i].id=="Fitted-blazer"){
+      localStorage.setItem("itemName","Fitted Blazer");
+      localStorage.setItem("itemPrice","57.00");
+      localStorage.setItem("itemImage","../images/clothes/Fitted-blazer.jpg");
+    }else if(productBox[i].id=="Grapic-T-shirt"){
+      localStorage.setItem("itemName","Grapic T-shirt");
+      localStorage.setItem("itemPrice","40.00");
+      localStorage.setItem("itemImage","../images/clothes/Grapic-T-shirt.jpg");
+    }else if(productBox[i].id=="sport-bra"){
+      localStorage.setItem("itemName","Sport Bra");
+      localStorage.setItem("itemPrice","35.00");
+      localStorage.setItem("itemImage","../images/clothes/sport-bra.jpg");
+    }else if(productBox[i].id=="lady-top"){
+      localStorage.setItem("itemName","Lady Top");
+      localStorage.setItem("itemPrice","52.00");
+      localStorage.setItem("itemImage","../images/clothes/lady-top.jpg");
+    }else if(productBox[i].id=="Sweaterpants"){
+      localStorage.setItem("itemName","Sweaterpants");
+      localStorage.setItem("itemPrice","85.00");
+      localStorage.setItem("itemImage","../images/clothes/Sweaterpants.jpg");
+    }else if(productBox[i].id=="Ribbed-T-shirt"){
+      localStorage.setItem("itemName","Ribbed T-shirt");
+      localStorage.setItem("itemPrice","60.00");
+      localStorage.setItem("itemImage","../images/clothes/Ribbed-T-shirt.jpg");
+    }else if(productBox[i].id=="Crop-Blouse"){
+      localStorage.setItem("itemName","Crop Blouse");
+      localStorage.setItem("itemPrice","45.00");
+      localStorage.setItem("itemImage","../images/clothes/Crop-Blouse.jpg");
+    }
+    // alert(localStorage.getItem("itemName"));
+  });
+
+}
+
+
