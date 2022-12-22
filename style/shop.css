@@ -327,6 +327,7 @@ body{
   background-color: #eee;
   padding: 20px;
   position: absolute;
+  display:none;
   top: 0;
   right: 0;
   transform: translate(100%);
