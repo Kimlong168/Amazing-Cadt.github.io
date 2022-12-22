@@ -186,11 +186,11 @@ for(let i=0;i<productBox.length;i++){
     }else if(productBox[i].id=="Jean"){
       localStorage.setItem("itemName","Jean");
       localStorage.setItem("itemPrice","25.00");
-      localStorage.setItem("itemImage","../images/clothes/jean.jpg");
+      localStorage.setItem("itemImage","../images/clothes/Jean.jpg");
     }else if(productBox[i].id=="Jacket"){
       localStorage.setItem("itemName","Jacket");
       localStorage.setItem("itemPrice","30.00");
-      localStorage.setItem("itemImage","../images/clothes/jacket.jpg");
+      localStorage.setItem("itemImage","../images/clothes/Jacket.jpg");
     }else if(productBox[i].id=="Vest"){
       localStorage.setItem("itemName","Vest");
       localStorage.setItem("itemPrice","25.00");
