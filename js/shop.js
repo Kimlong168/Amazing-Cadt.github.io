@@ -194,7 +194,7 @@ for(let i=0;i<productBox.length;i++){
     }else if(productBox[i].id=="Vest"){
       localStorage.setItem("itemName","Vest");
       localStorage.setItem("itemPrice","25.00");
-      localStorage.setItem("itemImage","../images/clothes/vest.jpg");
+      localStorage.setItem("itemImage","../images/clothes/Vest.jpg");
     }else if(productBox[i].id=="Dress"){
       localStorage.setItem("itemName","Dress");
       localStorage.setItem("itemPrice","10.00");
