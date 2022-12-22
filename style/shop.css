@@ -359,8 +359,8 @@ body{
 /* back filter icon */
 .hide-filter-icon{
   position: absolute;
-  left: 20px;
-  bottom: 10px;
+  left: 30px;
+  bottom: 40px;
   font-size: 20px;
   cursor: pointer;
 }
