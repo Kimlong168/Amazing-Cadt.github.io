@@ -11,6 +11,7 @@ let put=document.querySelectorAll(".price-range-number-put");
 let productBox=document.querySelectorAll(".product-image-container");
 let gridBox=document.querySelectorAll(".grid-box-container");
 let productInfo=document.querySelectorAll(".product-info-container");
+let filterContainer=document.querySelector(".filter-container");
 let filerPlusIcon=document.querySelectorAll(".filter-plus-icon");
 let filterSortDropdown=document.querySelectorAll(".filter-sort-dropdown");
 let hiddenFilterIcon=document.querySelector(".hidden-price-range-btn");
@@ -52,6 +53,7 @@ sortContainer.addEventListener('click',()=>{
 filerPlusIcon[0].addEventListener("click",()=>{
   if(check3==0){
     plusFilter(0);
+    
   }else{
     removeFilterSortDropdown(0);
   }
@@ -148,7 +150,6 @@ const myInterval = setInterval(function () {
 
 // ----------------hidden filter bar----------------------
 
-
 function plusFilter(i){
   if(i==1) removeFilterSortDropdown(0);
   else removeFilterSortDropdown(1);
@@ -166,8 +167,10 @@ function removeFilterSortDropdown(i){
 function showFilterBar(){
   hiddenFilterContainer.style.transform="translate(0)";
   hiddenFilterContainer.style.position="fixed";
+  filterContainer.style.display="block";
 }
 function removeFilterBar(){
   hiddenFilterContainer.style.transform="";
   hiddenFilterContainer.style.position="";
+  filterContainer.style.display="";
 }
